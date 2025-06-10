@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anindita | Portfolio</title>
+    <meta name="description" content="Anindita's Portfolio - Aspiring Developer, Data Enthusiast and AI Explorer">
+    <meta name="keywords" content="portfolio, developer, data, AI, python">
+    <meta name="author" content="Anindita Goswami">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner-border text-primary"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Anindita</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Others
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#experience">Professional Experience</a></li>
+                            <li><a class="dropdown-item" href="#research">Research Publications</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button id="themeToggle" class="btn btn-sm ms-2">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1>Hi, I'm Anindita</h1>
+                    <p class="lead">Aspiring Developer | Data Enthusiast | AI Explorer</p>
+                    <p>Powered by Python, wired by insights</p>
+                    <p id="typing-text" class="mt-3"></p>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="Images/profile.png" alt="Profile" class="img-fluid rounded-circle profile-img">
+                    <div class="social-links mt-4">
+                        <a href="https://github.com/Code-Ani2" target="_blank" class="social-icon" data-bs-toggle="tooltip" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anindita-goswami-baa239238/" target="_blank" class="social-icon" data-bs-toggle="tooltip" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <span class="social-icon" data-bs-toggle="tooltip" title="aninditagoswami523@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="social-icon" data-bs-toggle="tooltip" title="9863859193">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                    </div>
+                    <a href="#certificates" class="btn btn-outline-primary mt-3">
+                        <i class="fas fa-trophy me-2"></i>View Certificates
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="dropdown mb-3">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="aboutDropdown" data-bs-toggle="dropdown">
+                            Explore More About Me
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item about-tab" href="#" data-target="general">General</a></li>
+                            <li><a class="dropdown-item about-tab" href="#" data-target="aim">Aim</a></li>
+                            <li><a class="dropdown-item about-tab" href="#" data-target="hobbies">Hobbies</a></li>
+                            <li><a class="dropdown-item about-tab" href="#" data-target="volunteer">Volunteer Work</a></li>
+                            <li><a class="dropdown-item about-tab" href="#" data-target="resume">Resume</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="general" class="about-content active">
+                        <p>Hello! I'm Anindita, a passionate learner exploring the intersections of data, design, and development. I love turning complex problems into simple, beautiful solutions.</p>
+                        <p>When I'm not coding, you can find me reading about new technologies, working on personal projects, or exploring data visualization techniques.</p>
+                    </div>
+                    
+                    <div id="aim" class="about-content">
+                        <p>My aim is to become a skilled developer and data scientist who can bridge the gap between technical and business perspectives. I want to work on projects that leverage AI to solve real-world problems while maintaining ethical standards.</p>
+                        <p>I aspire to contribute to open-source projects and eventually lead teams that build impactful technology solutions.</p>
+                    </div>
+                    
+                    <div id="hobbies" class="about-content">
+                        <p>Beyond technology, I enjoy:</p>
+                        <ul>
+                            <li>Reading science fiction and fantasy novels</li>
+                            <li>Sketching and digital art</li>
+                            <li>Learning about cognitive science</li>
+                            <li>Participating in hackathons and coding competitions</li>
+                            <li>Exploring new cooking recipes</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="volunteer" class="about-content">
+                        <p>I believe in giving back to the community:</p>
+                        <ul>
+                            <li>Intern at Volunteered Health association of Tripura</li>
+                            <li>Worked with women shelter for economical and educational growth</li>
+                            <li>Organised hackthons in college</li>
+                            <li>Volunteered as a part time teacher in a local school</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="resume" class="about-content">
+                        <p>Explore my Professional Journey:</p>
+                        <a href="resumes/Anindita_Goswami_.Net Developer.pdf" class="btn btn-outline-light" download>Data Analyst Resume</a>
+                        <a href="resumes/Anindita_Goswami_Data Analyst Resume .pdf" class="btn btn-outline-light" download>Developer Resume</a>
+                        <a href="resumes/Anindita_Goswami_Resume ML.pdf" class="btn btn-outline-light" download>AI/ML Resume</a>
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
+                        <div class="mt-3">
+                            <h5>Education:</h5>
+                            <ul>
+                                <li>Bachelor's in Computer Science - Sapthagiri College of Engineering(2021-2025)</li>
+                                <li>Completed my higher secondary education from Baikhora H.S School with 89.8% marks</li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-darker">
+        <div class="container">
+            <h2 class="text-center mb-5">My Skills</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-code me-2"></i>Web Development</h5>
+                            <div class="skill-summary">
+                                <p class="card-text">HTML, CSS, JavaScript, Bootstrap</p>
+                            </div>
+                            <div class="skill-details">
+                                <div class="skill-item">
+                                    <i class="fab fa-html5 text-danger"></i> HTML5
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-css3-alt text-primary"></i> CSS3
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-js-square text-warning"></i> JavaScript
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-bootstrap text-purple"></i> Bootstrap
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-react text-info"></i> React (Learning)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-database me-2"></i>Data Science & AI</h5>
+                            <div class="skill-summary">
+                                <p class="card-text">Python, Pandas, SQL, Visualization</p>
+                            </div>
+                            <div class="skill-details">
+                                <div class="skill-item">
+                                    <i class="fab fa-python text-primary"></i> Python
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-table text-info"></i> Pandas/Numpy
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-brain text-warning"></i> Hugging Face
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-link text-success"></i> LangChain
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-chart-line text-success"></i> Matplotlib/Seaborn
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-database text-warning"></i> SQL
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-cloud me-2"></i>Cloud & DevOps</h5>
+                            <div class="skill-summary">
+                                <p class="card-text">AWS, GCP, CI/CD Basics</p>
+                            </div>
+                            <div class="skill-details">
+                                <div class="skill-item">
+                                    <i class="fab fa-aws text-warning"></i> AWS Basics
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-google text-danger"></i> Google Cloud
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-server text-info"></i> SaaS/PaaS Concepts
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-code-branch text-primary"></i> Git/GitHub
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-laptop-code me-2"></i>.NET Development</h5>
+                            <div class="skill-summary">
+                                <p class="card-text">C#, ASP.NET, Entity Framework</p>
+                            </div>
+                            <div class="skill-details">
+                                <div class="skill-item">
+                                    <i class="fab fa-microsoft text-primary"></i> C#
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-globe text-info"></i> ASP.NET
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-server text-success"></i> Entity Framework
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-users me-2"></i>Soft Skills</h5>
+                            <div class="skill-summary">
+                                <p class="card-text">Communication, Teamwork, Leadership</p>
+                            </div>
+                            <div class="skill-details">
+                                <div class="skill-item">
+                                    <i class="fas fa-comments text-info"></i> Effective Communication
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-people-group text-primary"></i> Team Collaboration
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-lightbulb text-warning"></i> Problem Solving
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-brain text-success"></i> Critical Thinking
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-chalkboard-teacher text-danger"></i> Mentoring
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-briefcase me-2"></i>Work Ethics</h5>
+                            <div class="skill-summary">
+                                <p class="card-text">Professionalism, Time Management</p>
+                            </div>
+                            <div class="skill-details">
+                                <div class="skill-item">
+                                    <i class="fas fa-clock text-primary"></i> Time Management
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-bullseye text-danger"></i> Goal-Oriented
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-handshake text-info"></i> Professional Integrity
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-calendar-check text-success"></i> Deadline Adherence
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-chart-line text-warning"></i> Continuous Learning
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Professional Experience</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">AI/ML Engineer Intern</h3>
+                            <h4 class="card-subtitle mb-3">Karunadu Technologies Pvt. Ltd.</h4>
+                            <ul class="experience-list">
+                                <li>Developed machine learning models for predictive analytics</li>
+                                <li>Implemented NLP solutions for text classification</li>
+                                <li>Worked with TensorFlow and PyTorch frameworks</li>
+                                <li>Participated in data preprocessing and feature engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">AI/ML Engineer Intern</h3>
+                            <h4 class="card-subtitle mb-3">NSDC Internship Program</h4>
+                            <ul class="experience-list">
+                                <li>Built computer vision models for object detection</li>
+                                <li>Optimized deep learning models for edge devices</li>
+                                <li>Collaborated on AI solution deployment pipelines</li>
+                                <li>Gained experience in MLOps practices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="py-5 bg-darker">
+        <div class="container">
+            <h2 class="text-center mb-5">Research Publications</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Brain-Computer Interface</h3>
+                            <p class="card-text">Research on neural signal processing and brainwave pattern recognition for assistive technologies.</p>
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#bciCertificates">
+                                Show Certificates
+                            </button>
+                            <div class="collapse" id="bciCertificates">
+                                <img src="Images/BCI certificate.png" class="img-fluid mt-2" alt="BCI Certificate">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Autism Detection in Children</h3>
+                            <p class="card-text">Research on early autism detection using machine learning</p>
+                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#autismCertificates">
+                                Show Certificates
+                            </button>
+                            <div class="collapse" id="autismCertificates">
+                                <img src="Images/Autism certificate.jpg" class="img-fluid mt-2" alt="Research Certificate">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Projects</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="Images/Vivid Raas.png" class="card-img-top" alt="Vivid Raas">
+                        <div class="card-body">
+                            <h5 class="card-title">Vivid Raas</h5>
+                            <p class="card-text">.NET MVC movie recommendation system with user reviews and comments.</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary">.NET</span>
+                                <span class="badge bg-secondary">MVC</span>
+                                <span class="badge bg-info">C#</span>
+                            </div>
+                            <a href="https://github.com/Code-Ani2/Vivid_Raas" target="_blank" class="btn btn-outline-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="Images/Bethany PIE shop.png" class="card-img-top" alt="Bethany Pie Shop">
+                        <div class="card-body">
+                            <h5 class="card-title">Bethany Pie Shop</h5>
+                            <p class="card-text">Responsive frontend for a pie shop with product details and ordering system.</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-success">Bootstrap</span>
+                                <span class="badge bg-warning">JavaScript</span>
+                                <span class="badge bg-danger">HTML/CSS</span>
+                            </div>
+                            <a href="https://github.com/Code-Ani2/BethanyPieShop/tree/master" target="_blank" class="btn btn-outline-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="Images/Customer segmentation 3D representation.png" class="card-img-top" alt="Customer Segmentation">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Segmentation</h5>
+                            <p class="card-text">K-means clustering to segment customers based on transactions.</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-info">Python</span>
+                                <span class="badge bg-dark">Streamlit</span>
+                                <span class="badge bg-secondary">Pandas</span>
+                            </div>
+                            <a href="https://github.com/Code-Ani2/Customer-Segmentation" target="_blank" class="btn btn-outline-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="Images/Caption genarator.jpg" class="card-img-top" alt="Auto Caption Generator">
+                        <div class="card-body">
+                            <h5 class="card-title">Auto Caption Generator</h5>
+                            <p class="card-text">AI-powered automatic caption generation for images.</p>
+                            <div class="tech-tags mb-3">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-success">TensorFlow</span>
+                                <span class="badge bg-warning">NLP</span>
+                            </div>
+                            <img src="Images/Data visualization with python.pdf" class="img-fluid mt-2" alt="Data Visualization Certificate">
+                            <img src="Images/probability and satistics using python.pdf" class="img-fluid mt-2" alt="Statistics Certificate">
+                            <a href="#" class="btn btn-outline-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="https://github.com/Code-Ani2" target="_blank" class="btn btn-outline-primary">
+                    <i class="fab fa-github me-2"></i>Explore More Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="py-5 bg-darker">
+        <div class="container">
+            <h2 class="text-center mb-5">My Certifications</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="certificate-card card h-100" data-bs-toggle="modal" data-bs-target="#certificateModal" 
+                        data-certificate-title="Google AI Essentials" 
+                        data-certificate-img="H:/My Drive/Portfolio/Google AI Essentials.pdf">
+                        <div class="card-body text-center">
+                            <i class="fas fa-certificate text-warning fa-3x mb-3"></i>
+                            <h5 class="card-title">Google AI Essentials</h5>
+                            <p class="card-text">Google Certification</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="certificate-card card h-100" data-bs-toggle="modal" data-bs-target="#certificateModal" 
+                        data-certificate-title="Python with AWS" 
+                        data-certificate-img="H:/My Drive/Portfolio/AWS and Python.pdf">
+                        <div class="card-body text-center">
+                            <i class="fas fa-certificate text-primary fa-3x mb-3"></i>
+                            <h5 class="card-title">Python with AWS</h5>
+                            <p class="card-text">AWS Certification</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="certificate-card card h-100" data-bs-toggle="modal" data-bs-target="#certificateModal" 
+                        data-certificate-title="Probability & Statistics with Python" 
+                        data-certificate-img="H:/My Drive/Portfolio/probability and statistics using python.pdf">
+                        <div class="card-body text-center">
+                            <i class="fas fa-certificate text-info fa-3x mb-3"></i>
+                            <h5 class="card-title">Probability & Statistics</h5>
+                            <p class="card-text">Data Science Certification</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="certificate-card card h-100" data-bs-toggle="modal" data-bs-target="#certificateModal" 
+                        data-certificate-title="SQL Masterclass" 
+                        data-certificate-img="H:/My Drive/Portfolio/SQL certificate.pdf">
+                        <div class="card-body text-center">
+                            <i class="fas fa-database text-success fa-3x mb-3"></i>
+                            <h5 class="card-title">SQL Masterclass</h5>
+                            <p class="card-text">Database Certification</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="certificate-card card h-100" data-bs-toggle="modal" data-bs-target="#certificateModal" 
+                        data-certificate-title="Myntra Data Analytics" 
+                        data-certificate-img="H:/My Drive/Portfolio/Myntra With Python.pdf">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line text-danger fa-3x mb-3"></i>
+                            <h5 class="card-title">Myntra Data Analytics</h5>
+                            <p class="card-text">Python Data Analysis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="certificate-card card h-100" data-bs-toggle="modal" data-bs-target="#certificateModal" 
+                        data-certificate-title="GenAI Masterclass" 
+                        data-certificate-img="H:/My Drive/Portfolio/Anindita Goswami -Freedom AI Certificate.pdf">
+                        <div class="card-body text-center">
+                            <i class="fas fa-robot text-purple fa-3x mb-3"></i>
+                            <h5 class="card-title">GenAI Masterclass</h5>
+                            <p class="card-text">Freedom AI Certification</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="https://www.linkedin.com/in/anindita-goswami-baa239238/details/certifications/" 
+                   target="_blank" 
+                   class="btn btn-outline-primary">
+                    <i class="fab fa-linkedin me-2"></i>View All Certifications on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="certificateModalLabel">Certificate</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe id="certificateViewer" src="" style="width:100%; height:70vh; border:none;"></iframe>
+                    <h4 id="certificateTitle" class="mt-3"></h4>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center bg-darker">
+        <div class="container">
+            <p>&copy; 2025 Anindita. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
